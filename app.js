@@ -1,21 +1,23 @@
+
+
 const calcData = [
-    { id:"clear", value:"AC"},
-    { id:"divide", value:"/"},
-    { id:"multiply", value:"x"},
-    { id:"seven", value: 7 }, 
-    { id:"eight", value: 8 },
-    { id:"nine", value: 9 },
-    { id:"subtract", value:"-"},
-    { id:"four", value: 4 },
-    { id:"five", value: 5 },
-    { id:"six", value: 6 },
-    { id:"add", value:"+"},
-    { id:"one", value: 1 },
-    { id:"two", value: 2 },
-    { id:"three", value: 3 },
-    { id:"equals", value:"="},
-    { id:"zero", value: 0 },
-    { id:"decimal", value:"."},
+    { id:"clear", value:"AC", class:"AC"},
+    { id:"divide", value:"/", class:"div"},
+    { id:"multiply", value:"x", class:"times"},
+    { id:"seven", value: 7, class:"seven" }, 
+    { id:"eight", value: 8 , class:"eight"},
+    { id:"nine", value: 9, class: "nine"},
+    { id:"subtract", value:"-", class:"minus"},
+    { id:"four", value: 4, class: "four"},
+    { id:"five", value: 5, class: "five"},
+    { id:"six", value: 6, class: "six"},
+    { id:"add", value:"+", class:"plus"},
+    { id:"one", value: 1, class:"one" },
+    { id:"two", value: 2, class: "two"},
+    { id:"three", value: 3, class: "three"},
+    { id:"equals", value:"=", class:"equals"},
+    { id:"zero", value: 0, class: "zero"},
+    { id:"decimal", value:".", class:"dot"},
 ];
 
 const operators = ["AC", "/", "x", "+", "-", "="];
@@ -43,8 +45,8 @@ const Keyboard = ({handleInput}) => (
 ) 
 
 function App () {
-    const [input, setInput] = React.useState("");
-    const [output, setoutput] = React.useState("")
+    const [input, setInput] = React.useState("0");
+    const [output, setoutput] = React.useState("1")
     const handleInput = () => {}
     return (
         <div class ="container">
