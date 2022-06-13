@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
+    
 }
 
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
 .container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+
 }
 .calculator {
     height: 445px;
@@ -65,9 +70,10 @@ button {
     color: white;
     background-color: black;
     border-radius: 10px;
-
+    transition: 0.1s ;
 }
 
 button:hover {
+    transition: 0.2s;
     background-color: rgb(255, 185, 56);
 }
