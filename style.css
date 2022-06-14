@@ -27,14 +27,14 @@ body {
 .output {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: end;
 
 }
 
 .keys {
     gap: 5px;
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -63,9 +63,20 @@ body {
     border: none;
 }
 
+.input,
+.result {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  height: 30px;
+
+}
+
 button {
     border: 1px solid white;
     padding: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
     font-size: 15px;
     color: white;
     background-color: black;
